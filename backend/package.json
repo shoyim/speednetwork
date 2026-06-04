@@ -1,0 +1,25 @@
+{
+  "name": "speednetwork-backend",
+  "version": "1.0.0",
+  "description": "SpeedNetwork backend - stateless speed test server",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.5.0",
+    "@fastify/rate-limit": "^9.1.0",
+    "@fastify/websocket": "^8.3.1",
+    "fastify": "^4.27.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/ws": "^8.18.1",
+    "tsx": "^4.15.0",
+    "typescript": "^5.4.5"
+  }
+}
